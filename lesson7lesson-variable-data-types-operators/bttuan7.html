@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<>
+    <!-- Bài 1: Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học, và Sinh học. Sau đó hiển thị điểm trung bình và tổng của những điểm này. -->
+
+    <body>
+        <!-- <script>
+            var inputvl = prompt("Nhap diem vat ly");
+            var inputhoa = prompt("Nhap diem hoa");
+            var inputsinh = prompt("Nhap diem sinh");
+            let vly = parseInt(inputvl);
+            let hoa = parseInt(inputhoa);
+            let sinh = parseInt(inputsinh);
+            let diemtb = (vly + hoa + sinh) / 3;
+            let tong = vly + hoa + sinh;
+            document.write("Diem trung binh: " + '<br>' + diemtb);
+            document.write('<br>');
+            document.write("Diem tong: " + '<br>' + tong);
+        </script> -->
+
+        <!-- Bai 2 Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit).  -->
+        <!-- <input id="c" type ="number" placeholder="Độ c (celsius)">
+        <button onclick="chuyendoi()">Nhap</button>
+        <script>
+
+            function chuyendoi (){
+            var input = document.getElementById('c').value
+            let c = parseInt(input) 
+            let quydoi = c * 1.8 + 32;
+            document.write("Result: " + quydoi)
+
+            }
+        </script> -->
+        
+        <!-- Bài 3,4: Viết chương trình tính diện tích, chu vi hình tròn -->
+         <input id="bankinh" type ="number" placeholder="Nhap ban kinh"><br>
+         <button onclick="tinhtoan()">Nhap</button>
+
+        <script>
+            function tinhtoan(){
+                var input = document.getElementById('bankinh').value
+                let bankinh = parseInt(input)
+                let tinhdt = bankinh ** 2 * Math.PI;
+                let tinhcv = bankinh * 2 * Math.PI;
+                document.write("Dien tich: " + tinhdt)
+                document.write('<br>')
+                document.write("Chu vi: " + tinhcv)
+            }
+
+        </script>
+
+    </body>
+
+</html>
