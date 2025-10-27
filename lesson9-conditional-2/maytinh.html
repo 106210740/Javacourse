@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+
+<body>
+<form method="post" action="">
+    <input type="number" name="firstNumber" id="firstNumber" value="" required="required"
+           placeholder="Nhập số thứ nhất" />
+    <input type="number" name="secondNumber" id="secondNumber" value="" required="required"
+           placeholder="Nhập số thứ hai" /><br><br>
+    <button type="button" onclick="calculate('+')">Addition</button>
+    <button type="button" onclick="calculate('-')">Subtraction</button>
+    <button type="button" onclick="calculate('*')">Multiplication</button>
+    <button type="button" onclick="calculate('/')">Division</button>
+    <h3 id="result"></h3>
+</form>
+<script>
+
+    function calculate(operation) {
+        let firstNumber = parseInt(document.getElementById("firstNumber").value);
+        let secondNumber = parseInt(document.getElementById("secondNumber").value);
+        let result;
+        switch (operation) {
+            case '+':
+                result = firstNumber + secondNumber;
+                break;
+            case '-':
+                result = firstNumber - secondNumber;
+                break;
+            case '*':
+                result = firstNumber * secondNumber;
+                break;
+            case '/':
+                if (secondNumber === 0) {
+                    result = 'Không thể chia cho 0';
+                    break;
+                }
+                result = firstNumber / secondNumber;
+                break;
+            default:
+                result = 'Phép toán không hợp lệ';
+        }
+        document.getElementById("result").innerHTML = `Kết quả: ` + result;
+    }
+</script>
+</body>
+
+</html>

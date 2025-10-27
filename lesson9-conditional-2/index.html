@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9: Conditional 2</title>
+</head>
+<body>
+<script>
+    // switch-case
+    /*
+     * if...else (condition: boolean)
+     * condition: string, number
+     * switch (condition) {
+     *  case value1:
+     *       // statement(s);
+     *    break;
+     *  case value2:
+     *       // statement(s);
+     *    break;
+     * }
+     */
+    // \t
+    // Magic number (số thần kỳ)
+    let luachon = prompt ("Moi chon thu tu do an/do uong:\n\n1. Com\n2. Pho\n3. Mi  ");
+    switch(luachon) {
+        case 1:
+            console.log('Goi bep nau com...');
+            break;
+        case 2:
+            console.log('Goi pho...');
+            break;
+        case 3:
+            console.log('Goi mi...');
+            break;
+        default:
+            console.log('Chung toi khong phuc vu mon tren. Moi chon lai mon khac');
+    }
+    switch (new Date().getDay()) {
+        case 6:
+            text = "Today is Saturday";
+            break;
+        case 0:
+            text = "Today is Sunday";
+            break;
+        default:
+            text = "Looking forward to the Weekend";
+    }
+    document.write(text);
+</script>
+</body>
+</html>
